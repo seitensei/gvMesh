@@ -1,0 +1,45 @@
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+0 * * * * ruby /var/gvMesh/arpSetup.rb
+2 * * * * ruby /var/gvMesh/arpSetup.rb
+4 * * * * ruby /var/gvMesh/arpSetup.rb
+6 * * * * ruby /var/gvMesh/arpSetup.rb
+8 * * * * ruby /var/gvMesh/arpSetup.rb
+10 * * * * ruby /var/gvMesh/arpSetup.rb
+12 * * * * ruby /var/gvMesh/arpSetup.rb
+14 * * * * ruby /var/gvMesh/arpSetup.rb
+16 * * * * ruby /var/gvMesh/arpSetup.rb
+18 * * * * ruby /var/gvMesh/arpSetup.rb
+20 * * * * ruby /var/gvMesh/arpSetup.rb
+22 * * * * ruby /var/gvMesh/arpSetup.rb
+24 * * * * ruby /var/gvMesh/arpSetup.rb
+26 * * * * ruby /var/gvMesh/arpSetup.rb
+28 * * * * ruby /var/gvMesh/arpSetup.rb
+30 * * * * ruby /var/gvMesh/arpSetup.rb
+32 * * * * ruby /var/gvMesh/arpSetup.rb
+34 * * * * ruby /var/gvMesh/arpSetup.rb
+36 * * * * ruby /var/gvMesh/arpSetup.rb
+38 * * * * ruby /var/gvMesh/arpSetup.rb
+40 * * * * ruby /var/gvMesh/arpSetup.rb
+42 * * * * ruby /var/gvMesh/arpSetup.rb
+44 * * * * ruby /var/gvMesh/arpSetup.rb
+46 * * * * ruby /var/gvMesh/arpSetup.rb
+48 * * * * ruby /var/gvMesh/arpSetup.rb
+50 * * * * ruby /var/gvMesh/arpSetup.rb
+52 * * * * ruby /var/gvMesh/arpSetup.rb
+54 * * * * ruby /var/gvMesh/arpSetup.rb
+56 * * * * ruby /var/gvMesh/arpSetup.rb
+58 * * * * ruby /var/gvMesh/arpSetup.rb
+17 *    * * *      cd / && run-parts --report /etc/cron.hourly
+25 6    * * *      test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7      test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *      test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#

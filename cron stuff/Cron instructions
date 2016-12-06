@@ -1,0 +1,3 @@
+run the command sudo crontab -e and edit the created crontab so that it has the 
+lines from the given crontab file.
+also need to make the directory gvMesh and put all of the files in there.

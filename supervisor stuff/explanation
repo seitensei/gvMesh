@@ -1,0 +1,5 @@
+1 install supervisor
+2 download the config file and put it into the /etc/supervisor/conf.d/ folder on the pi
+3 make the ruby files executable via chmod +x (ruby file name) while in the gvMesh folder.
+4 make the broadcast.err.log and broadcast.out.log files in the /var/log/ directory
+5. once all of this is in place we will most likely need to restart supervisor or the pi's

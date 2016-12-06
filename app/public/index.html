@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GVMesh Mailer</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body ng-app="app">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">GVMesh</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#!/inbox">Inbox</a>
+            </li>
+            <li>
+                <a href="#!/send">Send Message</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" ng-view>
+
+    </div>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="/components/app.js"></script>
+    <script src="/components/inbox/inboxModule.js"></script>
+    <script src="/components/send/sendModule.js"></script>
+  </body>
+</html>

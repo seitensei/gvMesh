@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pi Messenger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/PiStyles.css">
+</head>
+<body>
+    <h1>
+        New Message
+    </h1>
+    <form action="/" class="compose">
+        <input type="submit" value="Inbox" />
+    </form>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Send to
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>Charles</li>
+            <li>Tensei</li>
+            <li><a href="#">Ryan</a></li>
+        </ul>
+    </div>
+    <div class="message_form">
+        <form action="demo_form.asp"> <! action is where the form data will go>
+            <input type="text" name="Message" class="message_box"><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>

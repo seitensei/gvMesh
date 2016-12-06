@@ -1,0 +1,16 @@
+<div ng-controller="InboxController">
+    <h1>New Message</h1>
+    <form ng-submit="formSubmit()">
+        <div class="form-group">
+            <label for="txtIPDest">Destination</label><br />
+            <select ng-model="formData.dest">
+                <option ng-repeat="x in clients.clients" value="{{x}}">{{x}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="txtMessage">Message</label><br />
+            <textarea ng-model="formData.message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Send</button>
+    </form>
+</div>

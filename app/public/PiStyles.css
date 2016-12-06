@@ -1,0 +1,63 @@
+.inbox {
+    height :100px;
+    overflow: auto;
+    border: dotted;
+}
+
+table{
+
+    border: double;
+    width: 100%;
+
+}
+
+th {
+
+    height: 50px;
+    text-align: center;
+}
+td{
+
+    padding: 1em;
+
+}
+tr{
+    width: auto;
+}
+.inbox_message {
+
+    height: 75px;
+    text-align: center;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+
+}
+.dropdown {
+    padding-left: 25%;
+    padding-top: 30px;
+}
+.time {
+    text-align: right;
+    width: 50%;
+}
+.sender {
+    text-align: left;
+    width: auto;
+}
+.message{
+    text-align: center;
+    width: 100%;
+}
+.message_box{
+    width: 75%;
+    height: 300px;
+
+}
+.message_form{
+    padding-left: 25%;
+}
+.compose{
+    padding-left: 25%;
+}

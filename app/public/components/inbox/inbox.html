@@ -1,0 +1,21 @@
+<div ng-controller="InboxController">
+    <h1>Inbox</h1>
+    <div class="row">
+        <button type="button" ng-click="refresh_inbox()"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>Refresh Inbox</button>
+        <button type="button" ng-click="refresh_outbox()"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>Send Outbox</button>
+    </div>
+    <table class="table">
+        <tr>
+            <th>From</th>
+            <th>Time</th>
+            <th>Message</th>
+            <th>Options</th>
+        </tr>
+        <tr ng-repeat="x in inbox.messages | orderBy: time_created">
+            <td>{{x.source}}</td>
+            <td>{{x.time_created}}</td>
+            <td>{{x.message}}</td>
+            <td><button type="button" ng-click="delete(x.id)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td>
+        </tr>
+    </table>
+</div>
